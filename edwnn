@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>eDwnn</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    #text {
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <div id="text"></div>
+
+  <script>
+    const message = " — siapapun bisa Jadi apapun —edwnn";
+    const textElement = document.getElementById("text");
+    let i = 0;
+
+    function typeWriter() {
+      if (i < message.length) {
+        textElement.innerHTML += message.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100); // kecepatan ketik
+      }
+    }
+
+    typeWriter();
+  </script>
+</body>
+</html
