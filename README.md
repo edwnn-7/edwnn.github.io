@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>siapapun bisa jadi apapun</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: monospace;
+      text-align: center;
+      margin-top: 40vh;
+      overflow: hidden;
+    }
+    .scrolling-text {
+      position: absolute;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: scroll-left 15s linear infinite;
+    }
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scrolling-text">- siapapun bisa jafi apapun -edwnn</div>
+</body>
+</html>￼Enter
